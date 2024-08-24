@@ -41,10 +41,9 @@
 form{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-form button, form input {
+form button, form input , form select{
     width: 350px;
     height: 50px;
     margin: 5px 0px;

@@ -1,13 +1,7 @@
-import { Link, useNavigate } from 'react-router-dom'
 import './Login.css'
+import Register from './Register'
 
 const Login = () => {
-
-  const navigate = useNavigate();
-
-  const handleClick = () =>{
-    navigate('/register')
-  }
 
   return (
       <div className='login'>
@@ -27,9 +21,7 @@ const Login = () => {
                   </form>
             
                   <a>Esqueceu sua senha?</a>
-                  <div className='register'>
-                    <button onClick={handleClick}>Registre-se</button>
-                  </div>
+                  <Register/>
             </div>
           </div>
       </div>
