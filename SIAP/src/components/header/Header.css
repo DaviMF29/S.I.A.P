@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid var(--color-gray);
+    padding: 10px;
+    z-index: -2;
+}
+
+.left-header, .right-header{
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    justify-content: space-between;
+}
+
+.logo-header img{
+    height: 35px;
+}
