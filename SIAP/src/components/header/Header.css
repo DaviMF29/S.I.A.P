@@ -4,16 +4,43 @@ header{
     height: 50px;
     border-bottom: 1px solid var(--color-gray);
     padding: 10px;
-    z-index: -2;
 }
 
 .left-header, .right-header{
     display: flex;
     align-items: center;
+}
+
+.left-header {
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
     width: 15vw;
-    justify-content: space-between;
+}
+
+.right-header {
+    justify-self: flex-end;
+    width: 7vw;
+    margin-right: 10px;
+    gap: 20px;
 }
 
 .logo-header img{
     height: 35px;
+}
+
+.profile{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.search {
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+    cursor: pointer;
+
 }

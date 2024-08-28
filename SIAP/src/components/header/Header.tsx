@@ -1,11 +1,14 @@
 import { FaBars } from "react-icons/fa6";
 import './Header.css'
 
-const Header = () => {
+interface HeaderProps{onToggleMenu:() => void}
+
+
+const Header:React.FC <HeaderProps> = ({onToggleMenu}) => {
   return (
     <header>
         <div className='left-header'>
-            <div className="menu">
+            <div className="menu" onClick={onToggleMenu}>
               <FaBars />
             </div>
             <div className="logo-header">
