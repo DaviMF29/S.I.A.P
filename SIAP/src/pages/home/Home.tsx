@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Header from "../../components/header/Header"
-import SideBar from "../../components/sidebar/SideBar"
+import Sidebar from "../../components/sidebar/SideBar"
 
 const home = () => {
 
@@ -12,7 +12,7 @@ const home = () => {
   return (
     <div>
       <Header onToggleMenu={toggleSidebar}/>
-      <SideBar isOpen = {isSidebarOpen} onClose={toggleSidebar}/>
+      <Sidebar isOpen = {isSidebarOpen} onClose={toggleSidebar}/>
     </div>
   )
 }

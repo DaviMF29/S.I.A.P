@@ -1,18 +1,32 @@
 .sidebar {
+    position: fixed;
+    height: 90vh;
+    width: 5vw;
     display: flex;
     flex-direction: column;
-    height: 90vh;
     background: var(--color-white);
-    width: 70px;
     justify-content: space-between;
-    position: fixed;
     align-items: center;
     border-right: 1px solid var(--color-gray);
+    transition: 0.2s ease;
+}
+
+.sidebar.active{
+    width: 15vw;
+}
+
+.icon-button:hover{
+    color: var(--color-green);
+}
+
+.icon-button.active{
+    color: var(--color-green);
 }
 
 .icon-buttons-top, .icon-buttons-bottom {
     display: flex;
     flex-direction: column;
+    position: fixed;
 }
 
 .icon-buttons-top button, .icon-buttons-bottom button {
@@ -25,32 +39,23 @@
 }
 
 .icon-buttons-bottom {
-    position: relative;
-    margin-bottom: 20px;
+    bottom: 20px;
 }
+
 .menu {
     font-size: 4vh;
     cursor: pointer;
 }
 
-.sidebar.active {
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    background: var(--color-white);
-    width: 150px;
-    justify-content: space-between;
-    position: fixed;
-    border-right: 1px solid var(--color-gray);
-}
-
 .sidebar.active .icon-button {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    margin: 0px;
+    gap: 20px;
 }
 
 .sidebar.active .icon-button p{
-    font-size: 17.5px;
-    margin-left: 5px;
+    font-size: 18px;
+    font-family: var(--font);
+    font-weight:600;
 }

@@ -14,7 +14,7 @@ header{
 .left-header {
     justify-content: center;
     align-self: center;
-    gap: 20px;
+    gap: 40px;
     width: 15vw;
 }
 
@@ -42,5 +42,4 @@ header{
     font-size: 30px;
     align-items: center;
     cursor: pointer;
-
 }
