@@ -87,3 +87,7 @@ form button:hover{
     font-weight: bold;
     cursor: pointer;
 }
+
+.error{
+    color: red;
+}
