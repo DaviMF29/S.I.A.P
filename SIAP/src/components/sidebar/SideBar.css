@@ -1,5 +1,7 @@
 .sidebar {
     position: fixed;
+    top: 11%;
+    left: 0;
     height: 90vh;
     width: 5vw;
     display: flex;
@@ -9,6 +11,7 @@
     align-items: center;
     border-right: 1px solid var(--color-gray);
     transition: 0.2s ease;
+    z-index: 100;
 }
 
 .sidebar.active{

@@ -1,0 +1,21 @@
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feed{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 40px;
+    margin-left: 5vw;
+}
+
+.calendar{
+    background: #000;
+    border-radius: 10px;
+    height: 50vh;
+    width: 20vw;
+}

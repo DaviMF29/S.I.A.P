@@ -2,8 +2,15 @@ header{
     display: flex;
     justify-content: space-between;
     height: 50px;
+    width: 100vw;
+    background: var(--color-bg);
     border-bottom: 1px solid var(--color-gray);
     padding: 10px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .left-header, .right-header{
@@ -18,10 +25,10 @@ header{
     width: 15vw;
 }
 
-.right-header {
+.right-header{
     justify-self: flex-end;
     width: 7vw;
-    margin-right: 10px;
+    margin-right: 15px;
     gap: 20px;
 }
 
@@ -29,15 +36,7 @@ header{
     height: 35px;
 }
 
-.profile{
-    display: flex;
-    font-size: 50px;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-.search {
+.profile, .search{
     display: flex;
     font-size: 30px;
     align-items: center;

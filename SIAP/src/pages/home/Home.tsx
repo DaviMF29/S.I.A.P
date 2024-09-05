@@ -1,8 +1,10 @@
+import './Home.css'
 import { useState } from "react"
 import Header from "../../components/header/Header"
-import Sidebar from "../../components/sidebar/SideBar"
+import Sidebar from "../../components/sidebar/Sidebar"
+import Post from '../../components/posts/Post'
 
-const home = () => {
+const Home = () => {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
   const toggleSidebar = () => {
@@ -10,11 +12,23 @@ const home = () => {
   }
 
   return (
-    <div>
-      <Header onToggleMenu={toggleSidebar}/>
-      <Sidebar isOpen = {isSidebarOpen} onClose={toggleSidebar}/>
+    <div className='home'>
+      <div className="header">
+        <Header onToggleMenu={toggleSidebar}/>
+          <div className="sidebar">
+            <Sidebar isOpen = {isSidebarOpen} onClose={toggleSidebar}/>
+          </div>
+      </div>
+
+      <main>
+        <div className="feed">
+          <Post/>
+        </div>
+        
+        <div className="calendar"></div>
+      </main>
     </div>
   )
 }
 
-export default home
+export default Home

@@ -1,5 +1,6 @@
-import { FaBars } from "react-icons/fa6";
+import { FaBars, FaUser } from "react-icons/fa6";
 import './Header.css'
+import { FaSearch } from "react-icons/fa";
 
 interface HeaderProps{onToggleMenu:() => void}
 
@@ -17,10 +18,10 @@ const Header:React.FC <HeaderProps> = ({onToggleMenu}) => {
         </div>
         <div className="right-header">
             <div className="search">
-
+              <FaSearch/>
             </div>
             <div className="profile">
-                
+                <FaUser/>
             </div>
         </div>
     </header>
