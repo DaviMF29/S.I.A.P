@@ -1,0 +1,28 @@
+.loading{
+    background-color: var(--color-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 1s ease-in-out;
+}
+
+.logo-load{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-load img{
+    height: 100px;
+}
+
+.logo-load h1{
+    font-size: 25px;
+}
+
+.fade{
+    opacity: 0;
+}
