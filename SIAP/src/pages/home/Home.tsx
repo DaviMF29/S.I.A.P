@@ -3,6 +3,7 @@ import { useState } from "react"
 import Header from "../../components/header/Header"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Post from '../../components/posts/Post'
+import Calendar from '../../components/calendar/Calendar'
 
 const Home = () => {
 
@@ -25,7 +26,9 @@ const Home = () => {
           <Post/>
         </div>
         
-        <div className="calendar"></div>
+        <div className="calendar-container">
+          <Calendar/>
+        </div>
       </main>
     </div>
   )

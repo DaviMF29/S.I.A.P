@@ -12,10 +12,3 @@ main{
     gap: 40px;
     margin-left: 5vw;
 }
-
-.calendar{
-    background: #000;
-    border-radius: 10px;
-    height: 50vh;
-    width: 20vw;
-}
